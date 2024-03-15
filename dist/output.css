@@ -1358,3 +1358,6 @@ video {
     transition-property: none;
   }
 }
+
+.flip_H{ transform: scale(-1, 1); color:red; }
+.flip_V{ transform: scale(1, -1); color:green; }
