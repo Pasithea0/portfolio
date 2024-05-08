@@ -1361,3 +1361,24 @@ video {
 
 .flip_H{ transform: scale(-1, 1); color:red; }
 .flip_V{ transform: scale(1, -1); color:green; }
+
+/* Ignore my ugly ass code */
+.div-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Adjust this value to control the spacing between items */
+  margin: 0 auto;
+}
+
+.item {
+  text-align: center;
+  margin-bottom: 50px; /* Adjust this value to control the vertical spacing between items */
+  flex: 1 1 100%; /* Allow items to grow and shrink proportionally */
+}
+
+@media screen and (max-width: 1000px) {
+  .div-container {
+   display: block;
+  }
+}
