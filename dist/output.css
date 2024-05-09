@@ -1367,7 +1367,7 @@ video {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px; /* Adjust this value to control the spacing between items */
+  gap: 5px; /* Adjust this value to control the spacing between items */
   margin: 0 auto;
 }
 
@@ -1377,8 +1377,31 @@ video {
   flex: 1 1 100%; /* Allow items to grow and shrink proportionally */
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .div-container {
    display: block;
   }
+}
+
+.alert-banner {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-bottom: 5px;
+    height: auto;
+    background: rgba(255, 178, 102, 0.4);
+    border: 5px solid rgba(255, 178, 102, 0.1);
+    opacity: 90%;
+    border-radius: 12px;
+}
+
+.info-banner {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-bottom: 5px;
+    height: auto;
+    background: rgb(27, 183, 55, 0.4);
+    border: 5px solid rgb(27, 183, 55, 0.1);
+    opacity: 90%;
+    border-radius: 12px;
+    text-align: center;
 }
